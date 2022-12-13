@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { FooterModule } from './shared/modules/footer/footer.module';
 import { HeaderModule } from './shared/modules/header/header.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { HeaderModule } from './shared/modules/header/header.module';
     HomeModule,
     HeaderModule,
     FooterModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
