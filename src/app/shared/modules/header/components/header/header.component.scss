@@ -9,6 +9,7 @@ header {
   .logo {
     font-size: 2.5em;
     color: #fff;
+    cursor: pointer;
   }
 
   ul {
@@ -18,14 +19,26 @@ header {
     justify-content: space-between;
 
     li {
-      &:not(:last-child) {
-        margin-right: 30px;
+      width: 10vw;
+      padding: 10px 10px;
+      cursor: pointer;
+      font-size: 1em;
+      color: hsl(0, 0%, 47%);
+      text-align: center;
+
+      &:hover {
+        background-color: black;
+        border-radius: 5px;
+        color: #fff;
+        opacity: 0.9;
       }
 
-      a {
-        text-decoration: none;
-        font-size: 1em;
-        color: hsl(0, 0%, 47%);
+      &:active {
+        opacity: 0.5;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
       }
     }
   }

@@ -1,22 +1,12 @@
 <header class="header container">
-  <div class="logo">Halcyonic</div>
+  <div class="logo" [routerLink]="['/']">Halcyonic</div>
   <nav>
     <ul class="navbar">
-      <li class="navbar-item">
-        <a [routerLink]="['/']">Homepage</a>
-      </li>
-      <li class="navbar-item">
-        <a [routerLink]="['/']">Three Column</a>
-      </li>
-      <li class="navbar-item">
-        <a [routerLink]="['/']">Two Column #1</a>
-      </li>
-      <li class="navbar-item">
-        <a [routerLink]="['/']">Two Column #2</a>
-      </li>
-      <li class="navbar-item">
-        <a [routerLink]="['/']">One Column</a>
-      </li>
+      <li class="navbar-item" [routerLink]="['/']">Homepage</li>
+      <li class="navbar-item" [routerLink]="['/']">Three Column</li>
+      <li class="navbar-item" [routerLink]="['/']">Two Column #1</li>
+      <li class="navbar-item" [routerLink]="['/']">Two Column #2</li>
+      <li class="navbar-item" [routerLink]="['/']">One Column</li>
     </ul>
   </nav>
 </header>
