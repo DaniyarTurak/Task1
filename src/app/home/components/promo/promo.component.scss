@@ -27,6 +27,10 @@
       color: hsl(0, 6%, 87%);
       border-radius: 5px;
       box-shadow: -1px 1px 5px grey, 0px 0px 5px black;
+
+      &:hover {
+        box-shadow: -1px 1px 25px gray, 10px 2px 15px black;
+      }
     }
   }
 
