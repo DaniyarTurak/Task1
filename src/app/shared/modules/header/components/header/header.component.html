@@ -1,12 +1,31 @@
 <header class="header container">
+  <input [(ngModel)]="checkboxFlag" type="checkbox" id="menu-bar" />
+  <div class="menu-bar-container">
+    <label for="menu-bar">
+      <i class="fas fa-bars"></i>
+    </label>
+  </div>
+
   <div class="logo" [routerLink]="['/']">Halcyonic</div>
+
   <nav>
     <ul class="navbar">
-      <li class="navbar-item" [routerLink]="['/']">Homepage</li>
-      <li class="navbar-item" [routerLink]="['/']">Three Column</li>
-      <li class="navbar-item" [routerLink]="['/']">Two Column #1</li>
-      <li class="navbar-item" [routerLink]="['/']">Two Column #2</li>
-      <li class="navbar-item" [routerLink]="['/']">One Column</li>
+      <div class="closebtn" (click)="closeSideBar()">&times;</div>
+      <li class="navbar-item">
+        <a [routerLink]="['/']">Homepage</a>
+      </li>
+      <li class="navbar-item">
+        <a [routerLink]="['/']">Three Column</a>
+      </li>
+      <li class="navbar-item">
+        <a [routerLink]="['/']">Two Column #1</a>
+      </li>
+      <li class="navbar-item">
+        <a [routerLink]="['/']">Two Column #2</a>
+      </li>
+      <li class="navbar-item">
+        <a [routerLink]="['/']">One Column</a>
+      </li>
     </ul>
   </nav>
 </header>
