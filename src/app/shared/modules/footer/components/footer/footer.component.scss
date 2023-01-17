@@ -7,7 +7,7 @@
 
   .links {
     display: grid;
-    grid-template-columns: 12vw 12vw 12vw 12vw;
+    grid-template-columns: 135px 135px 135px 135px;
 
     a {
       padding-top: 10px;
@@ -49,7 +49,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   .footer {
     flex-direction: column;
 
