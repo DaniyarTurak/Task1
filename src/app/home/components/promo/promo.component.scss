@@ -16,6 +16,11 @@
       font-size: 30px;
       color: hsl(0, 5%, 80%);
       margin-bottom: 100px;
+
+      .more-btn {
+        cursor: pointer;
+        color: rgb(181, 186, 12);
+      }
     }
 
     button {

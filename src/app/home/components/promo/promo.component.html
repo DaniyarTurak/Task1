@@ -2,7 +2,9 @@
   <div class="promo-text">
     <h2 class="promo-title">
       {{ showMore ? text : text.substring(0, 50) + "..." }}
-      <span *ngIf="!showMore" (click)="setShowMore()">more</span>
+      <span class="more-btn" *ngIf="!showMore" (click)="setShowMore()"
+        >more</span
+      >
     </h2>
     <button class="btn">Go on, click me!</button>
   </div>
