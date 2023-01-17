@@ -3,20 +3,19 @@
   min-height: 300px;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../../../assets/background-images/banners-section.jpg");
+  background-image: url("/assets/background-images/banners-section.jpg");
 
   .promo-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    width: 590px;
-    height: 210px;
 
     .promo-title {
       font-weight: 300;
       font-size: 1.6em;
       color: hsl(0, 5%, 80%);
+      margin-bottom: 100px;
     }
 
     button {
@@ -39,12 +38,38 @@
     width: 590px;
     height: 210px;
     background-color: #fff;
-    background-image: url("../../../../assets/background-images/banner-frame.png");
+    background-image: url("/assets/background-images/banner-frame.png");
     margin-left: 10px;
+  
 
     .photo {
       width: 100%;
       height: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .section-promo {
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .promo-text {
+      align-items: center;
+      
+      .promo-title {
+        margin-bottom: 20px;
+      }
+
+      button {
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+    .photo-container {
+      margin-bottom: 20px;
     }
   }
 }

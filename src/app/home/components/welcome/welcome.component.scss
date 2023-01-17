@@ -1,5 +1,5 @@
 .section-welcome {
-  background-image: url("../../../../assets/background-images/banners-section.jpg");
+  background-image: url("/assets/background-images/banners-section.jpg");
   padding-top: 45px;
   padding-bottom: 50px;
   display: flex;
@@ -16,7 +16,7 @@
     .photo-container {
       padding: 10px 10px 6px 10px;
       background-color: #fff;
-      background-image: url("../../../../assets/background-images/banner-frame.png");
+      background-image: url("/assets/background-images/banner-frame.png");
       margin-bottom: 35px;
 
       .photo {
