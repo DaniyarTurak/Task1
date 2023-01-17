@@ -36,7 +36,6 @@
   .photo-container {
     padding: 10px;
     width: 590px;
-    height: 210px;
     background-color: #fff;
     background-image: url("/assets/background-images/banner-frame.png");
     margin-left: 10px;
@@ -49,7 +48,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   .section-promo {
     flex-direction: column-reverse;
     padding-top: 30px;
@@ -63,7 +62,7 @@
       }
 
       button {
-        width: 80%;
+        width: 30%;
         text-align: center;
       }
     }
@@ -71,6 +70,27 @@
     .photo-container {
       width: 100%;
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 736px) {
+  .section-promo {
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .promo-text {
+      align-items: center;
+      
+      .promo-title {
+        margin-bottom: 20px;
+      }
+
+      button {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }
