@@ -64,8 +64,14 @@ header {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   header {
+    justify-content: flex-start;
+
+    .logo {
+      margin: 0 auto;
+    }
+    
     label {
       display: initial;
       cursor: pointer;
