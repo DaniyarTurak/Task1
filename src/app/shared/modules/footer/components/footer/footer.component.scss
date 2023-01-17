@@ -30,6 +30,8 @@
         opacity: 0.9;
       }
     }
+
+    
   }
 
   .title {
@@ -38,7 +40,39 @@
     margin-bottom: 30px;
   }
 
+  .btn {
+    display: none;
+  }
+
   .text {
     padding-top: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+
+    .links-container {
+      margin-bottom: 30px;
+
+      .title {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+      
+    }   
+
+    .btn {
+      display: initial;
+      border-radius: 25px;
+      width: 50px;
+      height: 50px;
+    } 
+
+    .hide {
+      display: none;
+    }
   }
 }
