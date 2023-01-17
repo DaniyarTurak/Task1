@@ -1,10 +1,10 @@
 <section class="section-promo container">
   <div class="promo-text">
     <h2 class="promo-title">
-      We do something really useful, important, and unique. Learn all about it
-      here
+      {{ showMore ? text : text.substring(0, 50) + "..." }}
+      <span *ngIf="!showMore" (click)="setShowMore()">more</span>
     </h2>
-    <button>Go on, click me!</button>
+    <button class="btn">Go on, click me!</button>
   </div>
   <div class="photo-container">
     <img class="photo" src="/assets/pic01.jpg" alt="photo" />
