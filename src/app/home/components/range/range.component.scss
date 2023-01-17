@@ -111,3 +111,18 @@
     }
   }
 }
+
+
+@media (max-width: 900px) {
+  .section-range {
+    flex-direction: column;
+
+    .range {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
