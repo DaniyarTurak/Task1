@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  showLinks:boolean = true;
+  showLinks: boolean = true;
 
-  show():void {
-    this.showLinks =!this.showLinks;
+  toggle(): void {
+    this.showLinks = !this.showLinks;
     console.log(this.showLinks);
   }
 }
