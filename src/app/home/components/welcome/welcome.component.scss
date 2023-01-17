@@ -1,6 +1,5 @@
 .section-welcome {
   background-image: url("/assets/background-images/bg02.jpg");
-
   padding-top: 45px;
   padding-bottom: 50px;
   display: flex;
@@ -28,8 +27,26 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   .section-welcome {
+
+    display: grid;
+    grid-template-columns: 49% 49%;
+    row-gap: 30px;
+
+    .info {
+      width: 100%;
+
+      .photo-container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 736px) {
+  .section-welcome {
+    display: flex;
     flex-direction: column;
 
     .info {
