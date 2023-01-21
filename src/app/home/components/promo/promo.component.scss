@@ -10,7 +10,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    width: 90%;
+    width: 50%;
+    min-width: 450px;
     min-height: 200px;
 
     .promo-text {
@@ -42,11 +43,11 @@
 
   .photo-container {
     padding: 10px;
+    min-width: 450px;
     width: 590px;
     background-color: #fff;
     background-image: url("/assets/background-images/banner-frame.png");
-    margin-left: 10px;
-  
+
 
     .photo {
       width: 100%;

@@ -7,7 +7,7 @@
 
   .links {
     display: grid;
-    grid-template-columns: 135px 135px 135px 135px;
+    grid-template-columns: repeat(4, 13vw);
 
     a {
       padding-top: 10px;
@@ -31,6 +31,10 @@
       }
     }
 
+
+    .info {
+      width: 400px;
+    }
     
   }
 

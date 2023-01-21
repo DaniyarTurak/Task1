@@ -5,12 +5,14 @@
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  row-gap: 30px;
 
   .range {
     display: flex;
     flex-direction: column;
-    width: 22vw;
+    width: 380px;
     min-height: 480px;
     background-color: #fff;
     padding: 30px 25px 40px 25px;

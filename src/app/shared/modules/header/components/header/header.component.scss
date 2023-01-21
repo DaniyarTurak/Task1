@@ -26,11 +26,10 @@ header {
     justify-content: space-between;
 
     li {
-      width: 10vw;
-      padding: 10px 10px;
+      //width: 10vw;
+      //padding: 10px 10px;
       cursor: pointer;
       font-size: 20px;
-
       text-align: center;
 
       a {
@@ -39,8 +38,8 @@ header {
       }
 
       &:hover {
-        background-color: black;
-        border-radius: 5px;
+        //background-color: black;
+        //border-radius: 5px;
 
         a {
           color: #fff;
@@ -53,7 +52,7 @@ header {
       }
 
       &:not(:last-child) {
-        margin-right: 10px;
+        margin-right: 50px;
       }
     }
 
