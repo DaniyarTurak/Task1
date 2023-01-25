@@ -1,0 +1,21 @@
+<section class="section-video container">
+  <div class="title">The Video About Us</div>
+  <div class="video-container">
+    <img
+      *ngIf="videoDisabled; else videoblock"
+      class="video"
+      src="/assets/pic01.jpg"
+      alt="about-us"
+    />
+    <ng-template #videoblock
+      ><iframe
+        class="video"
+        src="https://www.youtube.com/embed/8uIe0qY9qG8?autoplay=1&mute=1&controls=0"
+      ></iframe
+    ></ng-template>
+    <button class="btn-play" (click)="toggleVideo()">
+      <i class="fas" [ngClass]="{ 'fa-pause': !videoDisabled }"></i>
+      <i class="fas" [ngClass]="{ 'fa-play': videoDisabled }"></i>
+    </button>
+  </div>
+</section>

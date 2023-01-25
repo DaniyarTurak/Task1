@@ -7,6 +7,8 @@ import { HomeModule } from './home/home.module';
 import { FooterModule } from './shared/modules/footer/footer.module';
 import { HeaderModule } from './shared/modules/header/header.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AboutUsModule } from './about-us/about-us.module';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +19,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderModule,
     FooterModule,
     FontAwesomeModule,
+    AboutUsModule,
+    StoreModule.forRoot({}, {}),
   ],
   providers: [],
   bootstrap: [AppComponent],
