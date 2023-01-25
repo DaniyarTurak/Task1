@@ -7,40 +7,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
 
-    .center-info {
+    .center-info-box {
         grid-column: 2/3;
         grid-row: span 2;
     }
 
-    .info {
-        background-color: #fff;
-        min-height: 320px;
-        box-shadow: 1px 1px 3px 1px #ccc;
-        padding: 40px 30px;
-
-        .subtitle {
-            color: rgb(69, 167, 169);
-        }
-
-        .list {
-            .list-item {
-                padding: 10px 0px;
-                position: relative;
-                a {
-                    color: rgb(215, 125, 8);
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    bottom: 0;
-                    border-bottom: 1px solid #ccc;
-                }
-            }
-            
-        }
-    }
+    
 }
 
 
