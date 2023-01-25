@@ -7,6 +7,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { RangeComponent } from './components/range/range.component';
 import { ThreeColumnComponent } from './components/three-column/three-column.component';
 import { TwoColumn01Component } from './components/two-column01/two-column01.component';
+import { TwoColumn02Component } from './components/two-column02/two-column02.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,14 @@ const routes: Routes = [
   {
     path: 'three-column',
     component: ThreeColumnComponent,
+  },
+  {
+    path: 'two-column-1',
+    component: TwoColumn01Component,
+  },
+  {
+    path: 'two-column-2',
+    component: TwoColumn02Component,
   },
 ];
 // forChild because is is child module
@@ -28,6 +37,7 @@ const routes: Routes = [
     RangeComponent,
     ThreeColumnComponent,
     TwoColumn01Component,
+    TwoColumn02Component,
   ],
 })
 export class HomeModule {}

@@ -1,0 +1,9 @@
+.section-two-column-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    .main-box {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+}
