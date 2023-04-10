@@ -1,9 +1,23 @@
 .section-two-column-2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     .main-box {
         grid-column: 2/3;
         grid-row: 1/3;
+    }
+}
+
+@media (max-width: 980px) {
+    .section-two-column-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .main-box {
+            grid-row: 1/3;
+            grid-column: span 2;
+        }
     }
 }
