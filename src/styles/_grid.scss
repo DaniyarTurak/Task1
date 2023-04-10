@@ -3,6 +3,7 @@
 $grid-columns: 12;
 
 $grid-gaps: (
+    '0': 0,
     '1': 10px,
     '2': 20px,
     '3': 30px
@@ -22,16 +23,32 @@ $layouts-values-aligns: flex-start, flex-end, center, baseline, stretch;
 }
 
 //grid-gaps 
-@each $k, $v in $grid-gaps {
-    .gap-#{$k} > * { // > direct descendants, class of direct children of row
-        padding-left: $v;
-        padding-right: $v;
-    }
-    .gap-#{$k} { // class for row 
-        margin-left: -$v; // because we need to eliminate white spaces in corners of start and end of table
-        margin-right: -$v;
+@include xs {
+    @each $k, $v in $grid-gaps {
+        .gap-xs-#{$k} > * { // > direct descendants, class of direct children of row
+            padding-left: $v;
+            padding-right: $v;
+        }
+        .gap-xs-#{$k} { // class for row 
+            margin-left: -$v; // because we need to eliminate white spaces in corners of start and end of table
+            margin-right: -$v;
+        }
     }
 }
+
+@include xl {
+    @each $k, $v in $grid-gaps {
+        .gap-xl-#{$k} > * { // > direct descendants, class of direct children of row
+            padding-left: $v;
+            padding-right: $v;
+        }
+        .gap-xl-#{$k} { // class for row 
+            margin-left: -$v; // because we need to eliminate white spaces in corners of start and end of table
+            margin-right: -$v;
+        }
+    }
+}
+
 
 @each $val in $layouts-values {
     .justify-#{$val} {

@@ -1,6 +1,6 @@
 <header>
   <div class="container">
-    <div class="header">
+    <div class="row justify-space-between align-center">
       <input [(ngModel)]="checkboxFlag" type="checkbox" id="menu-bar" />
       <div class="menu-bar-container">
         <label for="menu-bar">
@@ -8,29 +8,24 @@
         </label>
       </div>
 
-      <div class="logo" [routerLink]="['/']">Halcyonic</div>
+      <div class="font-xxl text-white" [routerLink]="['/']">Halcyonic</div>
 
       <nav>
-        <ul class="navbar">
+        <ul class="row gap-xs-0 gap-xl-3">
           <div class="closebtn" (click)="closeSideBar()">&times;</div>
-          <li class="navbar-item">
-            <a [routerLink]="['/']">Homepage</a>
-          </li>
-          <li class="navbar-item">
-            <a [routerLink]="['/three-column']">Three Column</a>
-          </li>
-          <li class="navbar-item">
-            <a [routerLink]="['/two-column-1']">Two Column #1</a>
-          </li>
-          <li class="navbar-item">
-            <a [routerLink]="['/two-column-2']">Two Column #2</a>
-          </li>
-          <li class="navbar-item">
-            <a [routerLink]="['/about']">About</a>
+          <li *ngFor="let route of routes">
+            <a
+              [routerLink]="['/' + route.path]"
+              class="font-lg text-gray-dark-1 text-white-hover"
+              [ngClass]="{ 'text-gray-light-5': route.path == currentRoute }"
+              (click)="handleClick(route.path)"
+              >{{ route.text }}</a
+            >
           </li>
         </ul>
       </nav>
+      <!-- <div class="empty-blank"></div> -->
     </div>
   </div>
-  <hr class="divider-line" />
+  <hr class="line-divider" />
 </header>
