@@ -1,70 +1,75 @@
 header {
   background-image: url("/assets/background-images/banners-section.jpg");
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 130px;
   position: relative;
-
-  .logo {
-    font-size: 45px;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  .menu-bar-container {
-    display: none;
-  }
-
-  #menu-bar {
-    display: none;
-  }
-
-  ul {
+  
+  .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    li {
-      //width: 10vw;
-      //padding: 10px 10px;
+    .logo {
+      font-size: 45px;
+      color: #fff;
       cursor: pointer;
-      font-size: 20px;
-      text-align: center;
-
-      a {
-        text-decoration: none;
-        color: hsl(0, 0%, 47%);
-      }
-
-      &:hover {
-        //background-color: black;
-        //border-radius: 5px;
-
-        a {
-          color: #fff;
-          opacity: 0.9;
-        }
-      }
-
-      &:active {
-        opacity: 0.5;
-      }
-
-      &:not(:last-child) {
-        margin-right: 50px;
-      }
     }
-
-    .closebtn {
+  
+    .menu-bar-container {
       display: none;
     }
+  
+    #menu-bar {
+      display: none;
+    }
+  
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      li {
+        //width: 10vw;
+        //padding: 10px 10px;
+        cursor: pointer;
+        font-size: 20px;
+        text-align: center;
+  
+        a {
+          text-decoration: none;
+          color: hsl(0, 0%, 47%);
+        }
+  
+        &:hover {
+          //background-color: black;
+          //border-radius: 5px;
+  
+          a {
+            color: #fff;
+            opacity: 0.9;
+          }
+        }
+  
+        &:active {
+          opacity: 0.5;
+        }
+  
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
+      }
+  
+      .closebtn {
+        display: none;
+      }
+    }
   }
+
+  
 }
 
 @media (max-width: 980px) {
-  header {
+ header {
+  .header {
     justify-content: flex-start;
 
     .logo {
@@ -147,4 +152,6 @@ header {
       }
     }
   }
+ }
+  
 }

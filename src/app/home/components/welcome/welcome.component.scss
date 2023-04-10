@@ -1,7 +1,7 @@
 .section-welcome {
   background-image: url("/assets/background-images/bg02.jpg");
-  padding-top: 45px;
-  padding-bottom: 50px;
+  //padding-top: 45px;
+  //padding-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr); //repeat(auto-fit, minmax(280px, 1fr)); // auto-fit => колонку с отсутсвием данных width=0
   row-gap: 20px;

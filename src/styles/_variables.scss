@@ -1,0 +1,29 @@
+$primary: #326dee;
+$secondary: #1ac888;
+$error: #d32752;
+
+$colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'error': $error,
+    'orange': #F8B195,
+    'red-pink': #F67280,
+    'pink': #C06C84,
+    'purple': #6C5B7B,
+    'blue': #355C7D,
+    'white': #fff,
+    'gray': #A8A7A7,
+    'black': #000,
+);
+
+$base-padding: 20px;
+$base-margin: 20px;
+
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+$base-font-size: 16px;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size *  3;
