@@ -8,6 +8,7 @@ import { RangeComponent } from './components/range/range.component';
 import { ThreeColumnComponent } from './components/three-column/three-column.component';
 import { TwoColumn01Component } from './components/two-column01/two-column01.component';
 import { TwoColumn02Component } from './components/two-column02/two-column02.component';
+import { CarouselModule } from '../UI/carousel.module';
 
 const routes: Routes = [
   {
@@ -29,7 +30,7 @@ const routes: Routes = [
 ];
 // forChild because is is child module
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, CarouselModule, RouterModule.forChild(routes)],
   declarations: [
     HomeComponent,
     PromoComponent,

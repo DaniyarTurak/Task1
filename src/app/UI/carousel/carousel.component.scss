@@ -1,0 +1,24 @@
+.carousel-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-gap: 10px;
+    align-items: center;
+  }
+  
+  .carousel-items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    justify-self: center;
+  }
+  

@@ -1,13 +1,13 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
+  //display: flex;
+  //justify-content: space-between;
   background-image: url("/assets/background-images/bg03.jpg");
   //padding-top: 45px;
   //padding-bottom: 50px;
 
   .links {
     display: grid;
-    grid-template-columns: repeat(4, 13vw);
+    grid-template-columns: repeat(4, 1fr);
 
     a {
       padding-top: 10px;

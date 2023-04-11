@@ -42,30 +42,53 @@ $layouts-values-aligns: flex-start, flex-end, center, baseline, stretch;
 //grid-gaps 
 @include xs {
     @each $k, $v in $grid-gaps {
-        .gap-xs-#{$k} > * { // > direct descendants, class of direct children of row
-            //padding-left: $v;
-            //padding-right: $v;
-            padding: $v;
+        .col-gap-xs-#{$k} > * { // > direct descendants, class of direct children of row
+            padding-left: $v;
+            padding-right: $v;
         }
-        .gap-xs-#{$k} { // class for row 
-            //margin-left: -$v; // because we need to eliminate white spaces in corners of start and end of table
-            //margin-right: -$v;
-            margin: -$v;
+        .col-gap-xs-#{$k} { // class for row 
+            margin-left: -$v; // because we need to eliminate white spaces in corners of start and end of table
+            margin-right: -$v;
+        }
+
+        .row-gap-xs-#{$k} > * {
+            padding-top: $v;
+            padding-bottom: $v;
+        }
+
+        .row-gap-xs-#{$k} {
+            margin-top: -$v;
+            margin-bottom: -$v;
         }
     }
 }
 
 @include xl {
     @each $k, $v in $grid-gaps {
-        .gap-xl-#{$k} > * { // > direct descendants, class of direct children of row
-            padding: $v;
+        .col-gap-xl-#{$k} > * { // > direct descendants, class of direct children of row
+            padding-left: $v;
+            padding-right: $v;
         }
-        .gap-xl-#{$k} { // class for row 
-            margin: -$v;
+        .col-gap-xl-#{$k} { // class for row 
+            margin-left: -$v; // because we need to eliminate white spaces in corners of start and end of table
+            margin-right: -$v;
+        }
+
+        .row-gap-xl-#{$k} > * {
+            padding-top: $v;
+            padding-bottom: $v;
+        }
+
+        .row-gap-xl-#{$k} {
+            margin-top: -$v;
+            margin-bottom: -$v;
         }
     }
 }
 
+
+
+//justi
 @include xs {
     @each $val in $layouts-values {
         .justify-xs-#{$val} {

@@ -9,6 +9,7 @@ import { HeaderModule } from './shared/modules/header/header.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutUsModule } from './about-us/about-us.module';
 import { StoreModule } from '@ngrx/store';
+import { CarouselModule } from './UI/carousel.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { StoreModule } from '@ngrx/store';
     HomeModule,
     HeaderModule,
     FooterModule,
+    CarouselModule,
     FontAwesomeModule,
     AboutUsModule,
     StoreModule.forRoot({}, {}),

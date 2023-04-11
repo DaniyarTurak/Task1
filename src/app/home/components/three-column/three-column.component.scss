@@ -1,8 +1,11 @@
 .section-three-column {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    
+    .info-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     
     .center-info-box {
         grid-column: 2/3;

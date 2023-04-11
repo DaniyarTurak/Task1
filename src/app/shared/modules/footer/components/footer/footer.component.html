@@ -1,37 +1,43 @@
 <footer class="footer">
-  <div class="container">
-    <div class="links-container">
-      <div class="title">Links to Important Stuff</div>
-      <button class="btn" (click)="toggle()">
-        <i class="fas fa-arrow-down" [ngClass]="{ hide: !showLinks }"></i>
-        <i class="fas fa-arrow-up" [ngClass]="{ hide: showLinks }"></i>
-      </button>
-      <div class="links hide" [ngClass]="{ show: !showLinks }">
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
-        <a [routerLink]="['/']">Accumson suspendisse</a>
+  <div class="container-xs container">
+    <div
+      class="row justify-xl-space-between align-xl-flex-start pt-3 pb-2 row-gap-xs-2 row-gap-xl-0"
+    >
+      <div class="links-container col-xs-12 col-xl-8">
+        <div class="title">Links to Important Stuff</div>
+        <button class="btn" (click)="toggle()">
+          <i class="fas fa-arrow-down" [ngClass]="{ hide: !showLinks }"></i>
+          <i class="fas fa-arrow-up" [ngClass]="{ hide: showLinks }"></i>
+        </button>
+        <div class="links hide" [ngClass]="{ show: !showLinks }">
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+          <a [routerLink]="['/']">Accumson suspendisse</a>
+        </div>
       </div>
-    </div>
-    <div class="info">
-      <div class="title">An Informative Text</div>
-      <p class="text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aut quos
-        id ratione, ea sunt nostrum. Obcaecati quaerat, consectetur similique,
-        excepturi deserunt odit id dolor qui ut enim minima eligendi.
-      </p>
+
+      <div class="info col-xs-12 col-xl-4">
+        <div class="title">An Informative Text</div>
+        <p class="text-gray-dark-1">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aut
+          quos id ratione, ea sunt nostrum. Obcaecati quaerat, consectetur
+          similique, excepturi deserunt odit id dolor qui ut enim minima
+          eligendi.
+        </p>
+      </div>
     </div>
   </div>
 </footer>

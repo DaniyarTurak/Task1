@@ -13,7 +13,7 @@ export class HeaderComponent {
       text: 'Homepage',
     },
     {
-      path: 'three-columns',
+      path: 'three-column',
       text: 'Three Columns',
     },
     {
@@ -25,8 +25,8 @@ export class HeaderComponent {
       text: 'Two Column #2',
     },
     {
-      path: 'one-column',
-      text: 'One Column',
+      path: 'about',
+      text: 'About',
     },
   ];
   currentRoute: string = '';

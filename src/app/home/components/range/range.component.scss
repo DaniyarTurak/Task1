@@ -1,19 +1,46 @@
+
+  .carousel-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+  }
+  
+
+.carousel-item {
+  display: block;
+}
+
+.carousel-nav-button {
+  display: none;
+}
+
+
+
+
+
 .section-range {
   background-color: #fff;
   background-image: url("/assets/background-images/banner-frame.png");
   //padding-top: 45px;
   //padding-bottom: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
-  row-gap: 30px;
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: stretch;
+  //flex-wrap: wrap;
+  //row-gap: 30px;
+
+  .ranges {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+  }
 
   .range {
     display: flex;
     flex-direction: column;
-    width: 380px;
-    min-height: 480px;
+    //width: 380px;
+    //min-height: 480px;
+    height: 480px;
     background-color: #fff;
     padding: 30px 25px 40px 25px;
     box-shadow: 2px 2px 1px 1px #ccc;
@@ -114,16 +141,63 @@
 }
 
 
-@media (max-width: 980px) {
+@media (max-width: 1200px) {
   .section-range {
-    flex-direction: column;
 
-    .range {
-      width: 100%;
-
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
+    .ranges {
+      display: block;
     }
+    // flex-direction: column;
+
+    // .range {
+    //   width: 100%;
+
+    //   &:not(:last-child) {
+    //     margin-bottom: 30px;
+    //   }
+    // }
+  }
+
+  .carousel-container {
+    position: relative;
+    //overflow: hidden;
+    height: 500px;
+  }
+  .carousel-items {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    //width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-50%);
+  }
+  .carousel-item {
+    display: none;
+    //width: 100%;
+    width: 600px;
+  }
+  .carousel-item.active {
+    display: block;
+  }
+  .carousel-nav-button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .carousel-nav-button.prev {
+    left: 20px;
+  }
+  .carousel-nav-button.next {
+    right: 20px;
   }
 }
