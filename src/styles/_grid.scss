@@ -22,6 +22,7 @@ $layouts-values-aligns: flex-start, flex-end, center, baseline, stretch;
     flex-flow: row wrap;
 }
 
+
 //grid-gaps 
 @include xs {
     @each $k, $v in $grid-gaps {
@@ -49,19 +50,33 @@ $layouts-values-aligns: flex-start, flex-end, center, baseline, stretch;
     }
 }
 
-
-@each $val in $layouts-values {
-    .justify-#{$val} {
-        justify-content: $val;
+@include xs {
+    @each $val in $layouts-values {
+        .justify-xs-#{$val} {
+            justify-content: $val;
+        }
+    }
+    
+    @each $val in $layouts-values-aligns {
+        .align-xs-#{$val} {
+            align-items: $val;
+        }
     }
 }
 
-@each $val in $layouts-values-aligns {
-    .align-#{$val} {
-        align-items: $val;
+@include xl {
+    @each $val in $layouts-values {
+        .justify-xl-#{$val} {
+            justify-content: $val;
+        }
+    }
+    
+    @each $val in $layouts-values-aligns {
+        .align-xl-#{$val} {
+            align-items: $val;
+        }
     }
 }
-
 
 @include xs {
     @for $i from 1 through $grid-columns {

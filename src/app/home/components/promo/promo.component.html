@@ -1,18 +1,22 @@
 <section class="section-promo">
   <div class="container">
-    <div class="promo-container">
-      <h2 class="promo-text">
-        {{ showMore ? text.substring(0, 150) : text.substring(0, 50) }}...
-        <span class="more-btn" *ngIf="!showMore" (click)="setShowMore()"
-          >more</span
-        >
-      </h2>
-      <button class="btn">Go on, click me!</button>
-    </div>
-    <div class="photo-container">
-      <img class="photo" src="/assets/pic01.jpg" alt="photo" />
+    <div
+      class="row justify-xl-space-between align-xl-flex-start pt-3 pb-3 gap-xl-2 mobile-content"
+    >
+      <div class="promo-container col-xl-6">
+        <h2 class="font-xl text-gray-light-1">
+          {{ text.substring(0, 78) }}...
+        </h2>
+        <button class="button">Go on, click me!</button>
+      </div>
+
+      <div class="col-xs-11 col-xl-6">
+        <div class="photo-container">
+          <img class="photo" src="/assets/pic01.jpg" alt="photo" />
+        </div>
+      </div>
     </div>
   </div>
 
-  <hr class="divider-line" />
+  <!-- <hr class="divider-line" /> -->
 </section>
