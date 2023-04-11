@@ -1,20 +1,23 @@
 <section class="section-welcome">
-  <div class="container">
-    <div class="info" *ngFor="let i of numbers">
-      <div class="photo-container">
-        <img class="photo" src="assets/pic01.jpg" alt="photo" />
-      </div>
-      <div class="text">
-        <h3>Welcome to Halcyonic</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          inventore veritatis id. Repellendus autem rerum nostrum incidunt,
-          error aliquid voluptate modi in accusantium, obcaecati illo sunt
-          officia rem, aperiam doloribus.
-        </p>
+  <div class="container-xs container">
+    <div
+      class="row justify-space-between align-center pt-3 pb-2 gap-xs-2 gap-xl-2"
+    >
+      <div class="col-xs-6 col-xl-3" *ngFor="let i of numbers">
+        <div class="photo-container">
+          <img class="photo" src="assets/pic01.jpg" alt="photo" />
+        </div>
+        <div>
+          <h3 class="font-lg text-gray-light-3 mt-1">Welcome to Halcyonic</h3>
+          <p class="text-gray-dark-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            inventore veritatis id. Repellendus autem rerum nostrum incidunt,
+            error aliquid voluptate modi in accusantium, obcaecati illo sunt
+            officia rem, aperiam doloribus.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-
-  <hr class="divider-line" />
+  <!-- <hr class="divider-line" /> -->
 </section>

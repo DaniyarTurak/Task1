@@ -12,11 +12,27 @@ $grid-gaps: (
 $layouts-values: flex-start, flex-end, center, space-between, space-around;
 $layouts-values-aligns: flex-start, flex-end, center, baseline, stretch;
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+
+
+
+@include xs {
+    .container-xs {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 }
+
+
+@include xl {
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
 .row {
     display: flex;
     flex-flow: row wrap;
@@ -27,12 +43,14 @@ $layouts-values-aligns: flex-start, flex-end, center, baseline, stretch;
 @include xs {
     @each $k, $v in $grid-gaps {
         .gap-xs-#{$k} > * { // > direct descendants, class of direct children of row
-            padding-left: $v;
-            padding-right: $v;
+            //padding-left: $v;
+            //padding-right: $v;
+            padding: $v;
         }
         .gap-xs-#{$k} { // class for row 
-            margin-left: -$v; // because we need to eliminate white spaces in corners of start and end of table
-            margin-right: -$v;
+            //margin-left: -$v; // because we need to eliminate white spaces in corners of start and end of table
+            //margin-right: -$v;
+            margin: -$v;
         }
     }
 }
@@ -40,12 +58,10 @@ $layouts-values-aligns: flex-start, flex-end, center, baseline, stretch;
 @include xl {
     @each $k, $v in $grid-gaps {
         .gap-xl-#{$k} > * { // > direct descendants, class of direct children of row
-            padding-left: $v;
-            padding-right: $v;
+            padding: $v;
         }
         .gap-xl-#{$k} { // class for row 
-            margin-left: -$v; // because we need to eliminate white spaces in corners of start and end of table
-            margin-right: -$v;
+            margin: -$v;
         }
     }
 }

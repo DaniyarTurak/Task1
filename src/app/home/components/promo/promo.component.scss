@@ -13,13 +13,6 @@
     align-items: flex-start;
     height: 235px;
 
-    .promo-text {
-      font-weight: 300;
-      font-size: 30px;
-      color: hsl(0, 5%, 80%);
-      white-space: pre-line;
-    }
-
     button {
       all: unset;
       width: 175px;
@@ -40,17 +33,10 @@
   }
 
   .photo-container {
-    padding: 10px;
     height: 275px;
     //min-width: 450px;
-    background-color: #fff;
-    background-image: url("/assets/background-images/banner-frame.png");
-
-
-    .photo {
-      width: 100%;
-      height: 100%;
-    }
+    //background-color: #fff;
+    //background-image: url("/assets/background-images/banner-frame.png");
   }
 }
 
@@ -63,6 +49,10 @@
       .promo-container {
         align-items: center;
         height: 150px;
+
+        h2 {
+          font-size: 36px;
+        }
       }
 
       .photo-container {

@@ -18,3 +18,16 @@
 
 // //utilities
 @import 'styles/utilities';
+
+.photo-container {
+    padding: 10px;
+    //min-width: 450px;
+    background-color: #fff;
+    background-image: url("/assets/background-images/banner-frame.png");
+
+
+    .photo {
+      width: 100%;
+      height: 100%;
+    }
+  }
